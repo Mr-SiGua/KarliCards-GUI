@@ -33,7 +33,7 @@ namespace KarliCards_GUI
         public List<string> SelectedPlayers { get; set; }
         public GameOptions()
         {
-            SelectedPlayers = new List<string>;
+            SelectedPlayers = new List<string>();
         }
 
 
