@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:KarliCards_GUI"
         mc:Ignorable="d"
         Title="Options" Height="345" Width="434" ResizeMode="NoResize">
+    <Window.Resources>
+        <local:ReversedBoolConverter x:Key="inverseBool"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="58"/>
@@ -33,7 +36,8 @@
                                Margin="10,54,0,0" VerticalAlignment="Top"/>
                         <ComboBox HorizontalAlignment="Left" Margin="196,58,0,0" 
                                   VerticalAlignment="Top" Width="86" Name="numberOfPlayersComboBox"
-                                  IsEnabled="{Binding ElementName=playAgainstComputerCheck, Path=IsChecked}"
+                                  IsEnabled="{Binding ElementName=playAgainstComputerCheck, Path=IsChecked,
+                            Converter={StaticResource ResourceKey=inverseBool}}"
                                   ItemsSource="{Binding Source={StaticResource numberOfPlayersData}}"
                                   SelectedValue="{Binding Path=NumberOfPlayers}">
                         </ComboBox>
