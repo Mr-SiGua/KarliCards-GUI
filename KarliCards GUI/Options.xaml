@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KarliCards_GUI"
         mc:Ignorable="d"
-        Title="Options" Height="345" Width="434" ResizeMode="NoResize">
+        Title="Options" Height="345" Width="434" ResizeMode="NoResize" BorderBrush="White">
     <Window.Resources>
         <local:ReversedBoolConverter x:Key="inverseBool"/>
     </Window.Resources>
