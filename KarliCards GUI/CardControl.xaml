@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:KarliCards_GUI"
              mc:Ignorable="d" 
-             d:DesignHeight="154" d:DesignWidth="100" Name="UserControl">
+             Height="154" Width="100" Name="UserControl">
     <UserControl.Resources>
         <local:RankNameConverter x:Key="rankConverter"/>
         <DataTemplate x:Key="SuitTenplate">
